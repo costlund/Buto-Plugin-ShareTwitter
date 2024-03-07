@@ -1,0 +1,27 @@
+readme:
+  name: Buto-Plugin-ShareTwitter
+  item:
+    -
+      name: Settings
+    -
+      name: Usage
+    -
+      name: Pages
+      item:
+        -
+          name: page_demo
+    -
+      name: Widgets
+      item:
+        -
+          name: widget_button_share_page
+    -
+      name: Event
+      item: {  }
+    -
+      name: Construct
+      item:
+        -
+          name: __construct
+    -
+      name: Methods

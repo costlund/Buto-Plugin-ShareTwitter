@@ -1,0 +1,16 @@
+-
+  type: a
+  attribute: 
+    href: rs:href
+    target: _blank
+  innerHTML:
+    -
+      type: widget
+      data:
+        plugin: icons/bootstrap_v1_8_1
+        method: icon
+        data:
+          icon: twitter
+    -
+      type: span
+      innerHTML: Twitter
