@@ -18,7 +18,21 @@ class PluginShareTwitter{
         $data->set('data/u', wfServer::calcUrl(true));
       }
     }
+    /**
+     * text
+     */
+    if(!$data->get('data/text') && wfGlobals::get('settings/application/title')){
+      $data->set('data/text', wfGlobals::get('settings/application/title'));
+    }else{
+      $data->set('data/text', 'Sharing a page.');
+    }
+    /**
+     * 
+     */
     $data->set('data/href', 'http://twitter.com/share?url='.$data->get('data/u').'&hashtags='.$data->get('data/hashtags').'&text='.$data->get('data/text'));
+    /**
+     * 
+     */
     $element = wfDocument::getElementFromFolder(__DIR__, __FUNCTION__);
     $element->setByTag($data->get('data'));
     wfDocument::renderElement($element);

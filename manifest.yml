@@ -1,5 +1,9 @@
-version: 1.0.0
+version: 1.1.0
 history:
+  1.1.0:
+    date: '2024-04-20'
+    title: 'Text'
+    description: 'Handle text param.'
   1.0.0:
     date: '2024-03-07'
     title: 'First version'
