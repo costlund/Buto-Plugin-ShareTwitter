@@ -3,6 +3,7 @@
   attribute: 
     href: rs:href
     target: _blank
+    onclick: PluginPageJs_trigger.trigger('share_twitter')
   innerHTML:
     -
       type: widget
